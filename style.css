@@ -1,0 +1,25 @@
+body {
+    background: #fefefe;
+    color: rgb(0, 0, 0);
+}
+
+.hotpink-header {
+    color: hotpink;
+}
+    
+a {
+    color: #8bdd20;
+}
+ 
+nav a {
+    color: #bd3f3f;
+}
+
+.top {
+    background: #b5dfe6;
+    color: #6e1959
+}
+
+.tomato-header {
+    color: tomato;
+}
