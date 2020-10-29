@@ -16,10 +16,29 @@ nav a {
 }
 
 .top {
-    background: #b5dfe6;
     color: #6e1959
 }
 
 .tomato-header {
     color: tomato;
+}
+
+.inline {
+    background: red;
+    display: inline;
+}
+
+.top-2 {    
+    width: 600px;
+    height: 400px;
+}
+.image-ania{
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    width: 270px;
+}
+
+.narz{
+    height: 100%;
 }
