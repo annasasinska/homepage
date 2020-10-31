@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <nav class="navigation">
+      <nav class="navigation">    
         <a class="navigation__link navigation__link--homepage" href="index.html">Strona domowa</a>
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
@@ -19,8 +19,7 @@
 
     <main>
       <header id="top" class="top">
-        <div class="inline">blabla</div>
-        <h1>Anna Sasińska - Strona domowa robiona w ramach WTF</h1>
+        <h1 class="main-heading main-heading--js">Anna Sasińska - Strona domowa robiona w ramach WTF</h1>
       </header>
       <section>
         <h2>Kim jestem? Jestem zwycięscą!</h2>
@@ -40,10 +39,11 @@
       </section>
       <section id="notatki">
         <h2 class="hotpink-header">Notatki z WTF</h2>
-        <article>
-          <h3 class="hotpink-header">#02.03 HTML</h3>
 
-          <ul>
+        <article class="week-summary">
+          <h3 class="week-summary__title">#02.03 HTML</h3>
+          <p class="week-summary__description">poszło całkiem spoko :)</p>
+          <ul class="week-summary__description week-summary__description--details">
             <li>HyperText Markup Language</li>
             <li>semantyczny = mający znaczenie</li>
             <li>command R - odświeżenie strony</li>
@@ -55,16 +55,16 @@
             <li>validator</li>
           </ul>
         </article>
-        <article>
-          <h3>#02.04 CSS</h3>
+        <article class="week-summary week-summary--special">
+          <h3 class="week-summary__title">#02.04 CSS</h3>
 
           <ul>
             <li>CSS - Cascading Style Sheets</li>
           </ul>
         </article>
 
-        <article>
-          <h3>#02.06</h3>
+        <article class="week-summary">
+          <h3 class="week-summary__title">#02.06</h3>
 
           <ul>
             <li>command option I - zbadaj</li>
@@ -74,8 +74,8 @@
             </li>
           </ul>
         </article>
-        <article>
-          <h3>#02.07</h3>
+        <article class="week-summary">
+          <h3 class="week-summary__title">#02.07</h3>
 
           <ul>
             <li>codepen - strona do dzielenia sie ze soba kodem</li>
