@@ -42,3 +42,20 @@ nav a {
 .narz{
     height: 100%;
 }
+
+.navigation {
+    background: #88cc5a;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.navigation__link{
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation__link--homepage{
+    background: yellow;
+    color: #000
+}
