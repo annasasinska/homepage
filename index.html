@@ -9,41 +9,57 @@
 
   <body>
     <header>
-      <nav class="navigation">    
-        <a class="navigation__link navigation__link--homepage" href="index.html">Strona domowa</a>
-        <a class="navigation__link" href="nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="nauka-css.html">Nauka CSS</a>
-        <a class="navigation__link" href="nauka-js.html">Nauka JS</a>
+      <nav class="navigation">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
+          >Strona domowa</a
+        >
+        <a
+          class="navigation__link navigation__link--html"
+          href="nauka-html.html"
+          >Nauka html</a
+        >
+        <a class="navigation__link navigation__link--css" href="nauka-css.html"
+          >Nauka CSS</a
+        >
+        <a class="navigation__link navigation__link--js" href="nauka-js.html"
+          >Nauka JS</a
+        >
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <header id="top" class="top">
-        <h1 class="main-heading main-heading--js">Anna Sasińska - Strona domowa robiona w ramach WTF</h1>
+        <h1 class="main-heading main-heading--js">
+          Anna Sasińska - Strona domowa robiona w ramach WTF
+        </h1>
       </header>
-      <section>
-        <h2>Kim jestem? Jestem zwycięscą!</h2>
+      <section class="about">
+        <h2 class="about__heading">Kim jestem? Jestem zwycięscą!</h2>
         <div class="top-2">
-        <div class="image-ania">
-          <img class="narz"
-            src="NARZECZEŃSKA ANIA I ŁUKASZ-114_Easy-Resize.com (2).jpg"
-            alt="uśmiechnięta Ania sesja narzeczeńska"
-          />
+          <div class="image-ania">
+            <img
+              class="about__picture"
+              src="NARZECZEŃSKA ANIA I ŁUKASZ-114_Easy-Resize.com (2).jpg"
+              alt="uśmiechnięta Ania sesja narzeczeńska"
+            />
+          </div>
         </div>
-        </div>
-        <p>
+        <p class="about__decription">
           Specjalista ds. kontrolingu pragnący zmienić swoją drogę w życiu. Uczę
           się frontendu w <a href="https://cotenfrontend.pl/">WTF</a>.
         </p>
-        <p>Moje notatki z kursu znajdziesz <a href="#notatki">poniżej</a>.</p>
+        <p>Moje notatki z kursu znajdziesz <a class="about__link" href="#notatki">poniżej</a>.</p>
       </section>
-      <section id="notatki">
-        <h2 class="hotpink-header">Notatki z WTF</h2>
+
+      <section class="notes" id="notatki">
+        <h2 class="notes__hotpink-header">Notatki z WTF</h2>
 
         <article class="week-summary">
           <h3 class="week-summary__title">#02.03 HTML</h3>
           <p class="week-summary__description">poszło całkiem spoko :)</p>
-          <ul class="week-summary__description week-summary__description--details">
+          <ul
+            class="week-summary__description week-summary__description--details"
+          >
             <li>HyperText Markup Language</li>
             <li>semantyczny = mający znaczenie</li>
             <li>command R - odświeżenie strony</li>
@@ -55,9 +71,9 @@
             <li>validator</li>
           </ul>
         </article>
+
         <article class="week-summary week-summary--special">
           <h3 class="week-summary__title">#02.04 CSS</h3>
-
           <ul>
             <li>CSS - Cascading Style Sheets</li>
           </ul>
@@ -65,7 +81,6 @@
 
         <article class="week-summary">
           <h3 class="week-summary__title">#02.06</h3>
-
           <ul>
             <li>command option I - zbadaj</li>
             <li>
@@ -74,19 +89,32 @@
             </li>
           </ul>
         </article>
+
         <article class="week-summary">
           <h3 class="week-summary__title">#02.07</h3>
-
           <ul>
-            <li>codepen - strona do dzielenia sie ze soba kodem</li>
+            <li>
+              codepen - strona do dzielenia sie ze soba kodem. Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.
+            </li>
           </ul>
+        </article>
+
+        <article class="week-summary">
+          <h3 class="week-summary__title empty-heading empty-heading--js"></h3>
         </article>
       </section>
     </main>
 
-    <footer>
-      domowa Ani Sasińskiej, żony Łukasza :)
-      <a href="#top">Wróć na górę strony</a>
+    <footer class="footer">
+      Strona domowa Ani Sasińskiej, żony Łukasza :)
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script src="main.js"></script>
   </body>

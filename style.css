@@ -3,7 +3,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.hotpink-header {
+.notes__hotpink-header {
   color: hotpink;
 }
 
@@ -32,14 +32,14 @@ nav a {
   width: 600px;
   height: 400px;
 }
+
 .image-ania {
   position: relative;
   height: 100%;
-  margin: 0 auto;
   width: 270px;
 }
 
-.narz {
+.about__picture {
   height: 100%;
 }
 
@@ -75,12 +75,26 @@ nav a {
 }
 
 .week-summary__description--details {
-
+    color: gray;
+}
+.week-summary__description--details {
+    color: gray;
 }
 
 .week-summary__title {
   color: #6e1959
 }
 
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+.footer {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
+.footer__link {
+  color: hotpink;
+}
