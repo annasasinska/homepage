@@ -49,7 +49,65 @@ const greet = (age, firstName) => {
 
 greet(25, 'Ania');
 
-const calculate = (myNumber) => myNumber*7
 
-const myResult = calculate(7)
-console.log(myResult)
+const deathStar = {
+diameter: 120000,
+fire: (target) => {
+  console.log(`${target} destroyed!`)
+},
+isOperating: true,
+levels: 357,
+name: 'Death Star',
+population: 10000,
+commander: {
+  name: 'Darth Vader',
+  age: 44,
+}
+}
+
+console.log(deathStar)
+
+deathStar.fire('fox')
+
+console.log(deathStar['name'])
+
+const myProperty = 'name'
+console.log(deathStar[myProperty])
+
+const showMyProperty=(myProperty) => {
+  console.log(`Twoja własność ${myProperty} to: ${deathStar[myProperty]}`);
+}
+
+showMyProperty('levels')
+
+
+const man = {
+  name: 'Olek',
+  age: 23,
+  canSing: true,
+  parents: {
+    mom: 'Ola',
+    dad: 'Kamil',
+  },
+  sing: (song) => {
+    console.log(`Umie śpiewać ${song}`)
+  } 
+}
+
+console.log(man)
+
+console.log(man.parents.mom)
+man.sing('Przez twe oczy')
+
+console.log(man['age'])
+console.log(man.age)
+
+const myData = 'parents'
+
+console.log(man[myData])
+
+const showHisParents = (hisParents) => {
+  console.log(`Olek ma ${hisParents} o imionach ${man.parents.mom} i ${man.parents.dad}`);
+}
+
+showHisParents('parents')
