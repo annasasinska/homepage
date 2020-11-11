@@ -107,7 +107,43 @@ const myData = 'parents'
 console.log(man[myData])
 
 const showHisParents = (hisParents) => {
-  console.log(`Olek ma ${hisParents} o imionach ${man.parents.mom} i ${man.parents.dad}`);
+  console.log(`Olek ma ${hisParents} o imionach ${man.parents['mom']} i ${man.parents['dad']}`);
 }
 
 showHisParents('parents')
+
+const numberOne = 25;
+const numberTwo = 30;
+const nameOne = 'Ania'
+let nameTwo = 'Ola';
+
+console.log(nameTwo)
+
+nameTwo = 'Ania';
+
+console.log(nameTwo)
+
+
+
+
+const humanOne = {
+  namee: 'Ania',
+  agee: 25,
+  address: {
+    street: 'wesola',
+    city: 'lodygowice'
+  }
+}
+const humanTwo = {
+  namee: 'olek',
+  agee: 30,
+  address: {
+    street: 'bytkowska',
+    city: humanOne.address.city
+  }
+}
+
+humanOne.address.city = 'kato'
+
+console.log(humanTwo)
+console.log(humanOne)

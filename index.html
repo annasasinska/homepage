@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body class="page">
     <header>
       <nav class="navigation">
         <a class="navigation__link navigation__link--homepage" href="index.html"
@@ -48,7 +49,10 @@
           Specjalista ds. kontrolingu pragnący zmienić swoją drogę w życiu. Uczę
           się frontendu w <a href="https://cotenfrontend.pl/">WTF</a>.
         </p>
-        <p>Moje notatki z kursu znajdziesz <a class="about__link" href="#notatki">poniżej</a>.</p>
+        <p>
+          Moje notatki z kursu znajdziesz
+          <a class="about__link" href="#notatki">poniżej</a>.
+        </p>
       </section>
 
       <section class="notes" id="notatki">
@@ -57,19 +61,82 @@
         <article class="week-summary">
           <h3 class="week-summary__title">#02.03 HTML</h3>
           <p class="week-summary__description">poszło całkiem spoko :)</p>
-          <ul
-            class="week-summary__description week-summary__description--details"
-          >
-            <li>HyperText Markup Language</li>
-            <li>semantyczny = mający znaczenie</li>
-            <li>command R - odświeżenie strony</li>
-            <li>html - szkielet</li>
-            <li>
-              command shift p - wpisuję komendę format i wybieram format
-              document
-            </li>
-            <li>validator</li>
-          </ul>
+          <section>
+            <h4
+              class="week-summary__description week-summary__description--details"
+            >
+              HTML:
+            </h4>
+            <ul class="list">
+              <li class="list__item">HyperText Markup Language</li>
+              <li class="list__item">semantyczny = mający znaczenie</li>
+              <li class="list__item">command R - odświeżenie strony</li>
+              <li class="list__item">html - szkielet</li>
+              <li class="list__item">
+                command shift p - wpisuję komendę format i wybieram format
+                document
+              </li>
+              <li class="list__item">
+                validator
+                <ol>
+                  <li>Przeanalizuj treść</li>
+                  <li>Podziel ją na sekcje</li>
+                  <li>Utwórz pierwszą wersję kodu</li>
+                </ol>
+              </li>
+            </ul>
+
+            <dl>
+              <dt>div</dt>
+              <dd>Opis mojego diva</dd>
+
+              <dt>article</dt>
+              <dd>Opis mojego artykułu</dd>
+            </dl>
+          </section>
+
+          <sction>
+            <h4>Kroki do zrobienia dobrego HTML-a</h4>
+            <ol>
+              <li>Przeanalizuj treść</li>
+              <li>Podziel ją na sekcje</li>
+              <li>Utwórz pierwszą wersję kodu</li>
+            </ol>
+          </sction>
+
+          <section>
+            <h4>Rozpiska WTF</h4>
+            <table class="table">
+              <caption>
+                Spis odcinków WTF
+              </caption>
+              <thead>
+                <tr>
+                  <th>lp</th>
+                  <th>tytuł</th>
+                  <th>czas trwania</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>Powitanie</td>
+                  <td>05:45</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur illo dolores rerum consectetur exercitationem
+                    beatae blanditiis! Laudantium numquam perspiciatis
+                    architecto! Veniam totam voluptatibus hic quo, magni
+                    assumenda voluptate pariatur corrupti.
+                  </td>
+                  <td>12:45</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
         </article>
 
         <article class="week-summary week-summary--special">
