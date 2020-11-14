@@ -32,12 +32,20 @@ function greetOld(age, firstName) {
   console.log(`Hej, mam na imię ${firstName} i mam ${age} lat`);
 }
 
+
 greetOld(age, firstName);
 
 function createContent(querySelectorContent, content) {
   const element = document.querySelector(querySelectorContent);
   element.innerHTML = content;
 }
+
+function greet2(age, firstName) {
+  console.log(`Siemano, mam na imię ${firstName} i mam ${age} lat`)
+
+}
+greet2(25,'Ania');
+
 
 createContent('.empty-heading--js', 'Witaj świecie! :)');
 
@@ -147,3 +155,22 @@ humanOne.address.city = 'kato'
 
 console.log(humanTwo)
 console.log(humanOne)
+
+
+
+if ('Java' != 'Java2  ') {
+  console.log('Java to JavaScript')
+}
+
+const myNumberr = 10;
+
+switch (myNumberr) {
+  case 7:
+    console.log('jestem siódemką');
+  break;
+  case 9:
+    console.log('jestem dziewiątką');
+  break;
+  default:
+    console.log('jestem czymś innym');
+}
