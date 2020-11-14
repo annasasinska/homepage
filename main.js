@@ -8,9 +8,7 @@ secondName = "Golańska";
 
 console.log(`${secondName}`);
 
-const heading = document.querySelector(".main-heading--js");
 
-heading.innerHTML = `Hej, mam na umię ${firstName} i mam ${age}`;
 
 const emptyHeading = document.querySelector(".empty-heading--js");
 
@@ -174,3 +172,21 @@ switch (myNumberr) {
   default:
     console.log('jestem czymś innym');
 }
+
+
+const button = document.querySelector('.button--js');
+console.log(button)
+
+const myClick = () => {
+  const heading = document.querySelector(".main-heading--js");
+  heading.innerHTML = `Hej, mam na umię Ania`;
+}
+
+button.addEventListener('click', myClick);
+
+
+const hamburger = document.querySelector('.hamburger--js');
+  hamburger.addEventListener('click', () => {
+  const nav = document.querySelector('.navigation--js');
+  nav.classList.toggle('navigation--open');
+})
